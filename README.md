@@ -19,7 +19,7 @@ Script takes 2 command line arguments:
 
  **Metric** -> Metric you are interested searching in the dashboard
 
-### python3 search_dashboards.py \<Sysdig Monitor API Token/> \<Metric you want to search/> 
+_python3 search_dashboards.py \<Sysdig Monitor API Token/> \<Metric you want to search/> _
 
 
 
