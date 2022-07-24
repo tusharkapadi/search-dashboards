@@ -19,7 +19,7 @@ Sysdig Monitor API Token -> Sysdig Monitor API Token. It will use the token to a
 
 Metric -> Metric you are interested searching in the dashboard
 
-python3 search_dashboards.py  /<Sysdig Monitor API Token> /<Metric you want to search> 
+python3 search_dashboards.py  /<Sysdig Monitor API Token/> /<Metric you want to search/> 
 
 
 
