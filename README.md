@@ -6,26 +6,27 @@ This utility searches for given metric in all the dashboards and provides the li
 
 This utility is written in Python3 and uses request module to query dashboards in Sysdig.
 
-Pre-Req:
+### Pre-Req:
 Make sure python3 is installed.
 Make sure requests module for python3 is installed
 Get Sysdig Monitor API Token (Look at next slide on how to get Sysdig Monitor API Token)
 
 
-Invoke the script
+### Invoke the script
 Script takes 2 command line arguments:
 
-Sysdig Monitor API Token -> Sysdig Monitor API Token. It will use the token to associate the dashboard with a particular user/team. 
+ **Sysdig Monitor API Token** -> Sysdig Monitor API Token. It will use the token to associate the dashboard with a particular user/team. 
 
-Metric -> Metric you are interested searching in the dashboard
+ **Metric** -> Metric you are interested searching in the dashboard
 
-python3 search_dashboards.py \<Sysdig Monitor API Token/> \<Metric you want to search/> 
+**python3 search_dashboards.py \<Sysdig Monitor API Token/> \<Metric you want to search/> 
+**
 
 
+### How to get Sysdig Monitor API Token:
 
-How to get Sysdig Monitor API Token:
-Login to your Sysdig UI
-Click on your Initial Icon at the bottom left
-Go to Settings
-Go to User Profile
-Copy Sysdig Monitor API Token
+1. Login to your Sysdig UI
+2. Click on your Initial Icon at the bottom left
+3. Go to Settings
+4. Go to User Profile
+5. Copy Sysdig Monitor API Token
