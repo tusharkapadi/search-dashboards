@@ -49,18 +49,20 @@ def export_dashboard():
         if metric in json.dumps(dashboard_data):
             #print("metric found")
 
-
+            print("X", end="", flush=True)
             # metric found... search for panel and query
             for panel in dashboard["panels"]:
                 panel_str = json.dumps(panel)
                 if metric in panel_str:
                     #print("Found in panel - " +  panel["name"])
-                    found_dashboard_dict = {"dashboard_name" :  dashboard["name"], "panel_name" : panel["name"]}
+                    #found_dashboard_dict = {"dashboard_name": dashboard["name"], "panel_name": panel["name"]}
+                    panel_url = end_point + "/#/dashboards/" + str(dashboard["id"]) + "/" + str(panel["id"]) + "/edit?last=600"
+                    found_dashboard_dict = {"dashboard_name": dashboard["name"], "panel_id": panel["id"], "panel_name": panel["name"], "panel_url": panel_url}
                     found_dashboards_list.append(found_dashboard_dict.copy())
                     found_dashboard_dict.clear()
-                    print("X", end="")
+
         else:
-            print(".", end="")
+            print(".", end="", flush=True)
 
 
     print("")
@@ -80,7 +82,9 @@ def print_summary_output():
     for dashboard in found_dashboards_list:
         print("-" * 100)
         print("dashboard: " + dashboard["dashboard_name"])
-        print("panel: " + dashboard["panel_name"])
+        print("panel id: " + str(dashboard["panel_id"]))
+        print("panel name: " + dashboard["panel_name"])
+        print("panel url: " + dashboard["panel_url"])
 
 
 
