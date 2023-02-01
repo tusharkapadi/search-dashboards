@@ -20,7 +20,7 @@ Script takes 4 command line arguments as key=value pair:
 
  **Metric** -> Metric you are interested searching in the dashboard. You don't need to specify the complete metric, partial metric name is allowed.
  
- **output** -> Optional - values can be either "csv" or "json". It will create a file in specified output format. It creates a file with <Metric>_<Today's date>.<output>
+ **output** -> Optional - values can be either "csv" or "json". It will create a file in specified output format. It creates a file with <Metric>_<Today's date>.<output> in current directory
  
  
 
